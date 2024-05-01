@@ -30,6 +30,8 @@ const preco: number = 200;
 
 //
 // 0201 Annotation e Inference 1
+
+
 // objetos
 const carro: {
 marca:string;
