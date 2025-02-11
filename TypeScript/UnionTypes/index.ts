@@ -1,4 +1,4 @@
-let total: string | number = 200;
-total = "abacate"
+let totalValue: string | number = 200;
+totalValue = "abacate"
 
-console.log(total);
+console.log(totalValue);
