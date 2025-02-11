@@ -42,3 +42,4 @@ portas: number;
 };
 
 const barato = 200 < 400 ? true : 'produto caro'
+console.log(barato)
