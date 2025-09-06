@@ -22,6 +22,5 @@ function totalMudou() {
 }
 
 if (ipunt) {
-    ipunt.addEventListener("keyup", totalMudou);
+  ipunt.addEventListener("keyup", totalMudou);
 }
-

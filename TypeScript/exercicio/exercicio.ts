@@ -1,10 +1,3 @@
-function normalizartexto(texto: string){
-
-    return texto.trim().toLowerCase();
+function normalizartexto(texto: string) {
+  return texto.trim().toLowerCase();
 }
-
-
-
-
-
-

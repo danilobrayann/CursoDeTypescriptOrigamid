@@ -1,30 +1,29 @@
 async function fetchProduct() {
-     const response = await fetch('https://api.origamid.dev/json/notebook.json');
-     const data = await response.json();
-     showProduct(data);
+  const response = await fetch("https://api.origamid.dev/json/notebook.json");
+  const data = await response.json();
+  showProduct(data);
 }
 
 fetchProduct();
 
-interface empresa{
-     nome: string;
-     fundacao: number;
-     pais: string;
+interface empresa {
+  nome: string;
+  fundacao: number;
+  pais: string;
 }
 
 interface Product {
-     nome: string;
-     preco: number;
-     descricao: string;
-     garantia: string;
-     seguroAcidente: boolean;
-     empresaFabricante: empresa;
-     empresaMontadora: empresa;
+  nome: string;
+  preco: number;
+  descricao: string;
+  garantia: string;
+  seguroAcidente: boolean;
+  empresaFabricante: empresa;
+  empresaMontadora: empresa;
 }
 
-
 function showProduct(data: Product) {
-document.body.innerHTML = `
+  document.body.innerHTML = `
 
 <div>
 <h2>Nome: ${data.nome}</h2>
@@ -36,5 +35,5 @@ document.body.innerHTML = `
 <h3>Montadora: ${data.empresaMontadora.nome}</h3>
 </div>
 </div>
-`
+`;
 }
