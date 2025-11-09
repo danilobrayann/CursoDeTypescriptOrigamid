@@ -5,3 +5,11 @@ class Produtos {
     this.nome = nome;
   }
 }
+
+class jogoos extends Produtos {
+  jogadores: number;
+  constructor(nome: string, jogadores: number) {
+    super(nome);
+    this.jogadores = jogadores;
+  }
+}
