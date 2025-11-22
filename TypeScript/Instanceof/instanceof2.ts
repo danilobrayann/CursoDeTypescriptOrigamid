@@ -13,3 +13,11 @@ class jogoos extends Produtos {
     this.jogadores = jogadores;
   }
 }
+
+interface carro {
+  nome: string;
+}
+
+const honda: carro = {
+  nome: "Honda Civic",
+};
